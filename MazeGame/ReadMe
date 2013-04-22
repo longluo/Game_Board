@@ -1,0 +1,25 @@
+MazeGame
+=================
+
+
+A game in which a blob-like character tries to find its way out of a maze.
+The character starts in the middle of the maze and must find the exit,
+which will always be located at one of the four corners of the maze.  Once
+the exit to the maze is located, the character is placed into the middle of
+a new maze and must find the exit to that maze; this repeats endlessly.
+
+The game is started by pressing the select push button on the right side
+of the board.  During game play, the select push button will fire a bullet
+in the direction the character is currently facing, and the navigation push
+buttons on the left side of the board will cause the character to walk in
+the corresponding direction.
+
+Populating the maze are a hundred spinning stars that mindlessly attack the
+character.  Contact with one of these stars results in the game ending, but
+the stars go away when shot.
+
+Score is accumulated for shooting the stars and for finding the exit to the
+maze.  The game lasts for only one character, and the score is displayed on
+the virtual UART at 115,200, 8-N-1 during game play and will be displayed
+on the screen at the end of the game.
+
